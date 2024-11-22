@@ -1,1 +1,1 @@
-# SGAE-SGAE-SubGeaph-AutoEncoder-
+# SGAE-SubGeaph-AutoEncoder
