@@ -4,15 +4,12 @@ This project introduces SGAE (SubGraph AutoEncoder), a novel framework for link 
 ## Overview
 SGAE uses two key innovations:
 
-### Subgraph extraction methods:
-h-hop extraction: Extracts traditional h-hop subgraphs to capture local graph structures.
-DIS (Dynamic Importance Sampling): A proposed method for adaptive subgraph extraction.
-Subgraph embedding generation methods:
-
-### Subgraph feature vector extraction methods:
-NDP (Node Distance Penalty): A novel method that uses node distances to generate subgraph feature vectors.
-CNN-based method: A method that applies convolutional neural networks (CNN) to the feature matrix of subgraphs to extract subgraph feature vectors.
-These innovations are evaluated on four standard datasets (Karate, USAir Power, and Yeast) to demonstrate the effectiveness of the SGAE framework for link prediction.
+### Subgraph Extraction Methods:
+- h-hop extraction: Extracts traditional h-hop subgraphs to capture local graph structures and node relationships.
+- DIS (Distance-based): A proposed method for subgraph extraction, selecting subgraphs based on the distance between feature vectors of subgraph nodes and those of target nodes.
+### Subgraph Embedding Generation Methods:
+- CNN-based feature extraction: Convolutional Neural Networks (CNN) are used to extract feature vectors from subgraphs.
+- NDP (Normal Distance Penalty): This method introduces a novel approach to weighting nodes in subgraphs. It weighs the feature vectors of subgraph nodes to generate a more meaningful subgraph feature vector.
 
 ## Project Structure
 - `SGAE.ipynb`: Contains the full implementation of the SGAE framework, including:
